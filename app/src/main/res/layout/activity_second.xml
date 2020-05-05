@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/upperLabel"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:padding="10dp"
+        android:text="@string/select_date_to_book_appointment"
+        android:textSize="20sp" />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/upperLabel"
+        android:padding="10dp"
+        android:layout_alignStart="@+id/upperLabel"
+        android:layout_alignEnd="@+id/upperLabel"
+
+        >
+        <RadioButton
+            android:id="@+id/today"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/today"/>
+        <RadioButton
+            android:id="@+id/tomorrow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tomorrow"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/checkSlotButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/check_available_slots"
+        />
+
+    <RadioGroup
+        android:id="@+id/slotRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/checkSlotButton"
+        android:layout_alignStart="@+id/upperLabel"
+        android:layout_alignEnd="@+id/upperLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:padding="10dp"
+
+        >
+
+        <RadioButton
+            android:id="@+id/slotOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/morningSlot" />
+
+        <RadioButton
+            android:id="@+id/slotTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eveningSlot" />
+    </RadioGroup>
+<Button
+    android:id="@+id/bookSlotButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/checkSlotButton"
+    android:layout_alignLeft="@+id/checkSlotButton"
+    android:text="@string/bookButton"
+    android:layout_below="@+id/slotRadioGroup"
+
+    />
+
+    <Button
+        android:id="@+id/checkAppStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bookSlotButton"
+        android:layout_alignStart="@+id/checkSlotButton"
+        android:layout_alignEnd="@+id/checkSlotButton"
+        android:layout_marginTop="10dp"
+        android:text="@string/checkAppointmentStatus"
+
+        android:textSize="12sp" />
+</RelativeLayout>

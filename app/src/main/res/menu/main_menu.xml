@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/clearDataBase"
+        android:title="@string/clearDataBase"
+        app:showAsAction="never"
+        ></item>
+
+    <item
+        android:id="@+id/checkPatient"
+        android:title="@string/checkPatient"
+        app:showAsAction="never"
+        ></item>
+    <item
+        android:id="@+id/bookAnotherApp"
+        android:title="@string/bookAnotherApp"
+        app:showAsAction="never"
+        ></item>
+</menu>
